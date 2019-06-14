@@ -1,6 +1,6 @@
-* {
+*{
   box-sizing: border-box;
-
+  font-family: Helvetica, sans-serif;
 }
 
 header {
@@ -21,7 +21,7 @@ footer {
 }
 nav {
   width: 960px;
-  height: auto;
+  margin: auto;
 }
 
 nav > ul {
@@ -71,6 +71,10 @@ main > article > section {
   float: right;
   padding-left: 30px;
 }
+section {
+  position: relative;
+  height:400px;
+}
 
 section > button {
   width: 150px;
@@ -78,13 +82,14 @@ section > button {
   background-color: #111;
   color: #eee;
   position: absolute;
+  bottom: 0px;
   
 }
 
 section > button:hover {
   background-color: #eee;
   color: #111;
-  transition: 350ms;
+  transition: 50ms;
   transition-timing-function: ease-in;
   transition-delay: 100ms;
   cursor: pointer;
@@ -102,11 +107,6 @@ section > div {
 }
 
 p {
-  font-size: 1em;
-  overflow: scroll;
-  height: 339px;
-}
-
-p > * {
+  font-style: italic;
   overflow-y: scroll;
 }
